@@ -1,0 +1,11 @@
+
+version: '1.0'
+
+services:
+  notebook:
+    image: jupyter/pyspark-notebook
+    container_name: ML-Coursera-Notebook
+    ports:
+      - 8888:8888
+    volumes:
+      - ./:/home/jovyan/work/
